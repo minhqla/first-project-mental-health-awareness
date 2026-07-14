@@ -20,7 +20,7 @@
 
 <body>
     <!-- Header and Navigation -->
-    <nav class="navbar navbar-expand-md nav-bg-color">
+    <nav class="navbar navbar-expand-md nav-bg-color fixed-top">
         <div class="container">
         <a class="navbar-brand" href="index.html"><i class="fa-solid fa-spa"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,19 +61,14 @@
             </div>
         </header>
 
-                <!-- About section links to #about href in navbar -->
         <section id="about" class="container">
             <div class="row">
-                <!-- my-4 used to add top and bottom margin to heading -->
                 <div class="col-12 text-center my-4">
                     <h2 class="display-5">About Us</h2>
                 </div>
-                <!-- mb-4 used to add margin under image -->
                 <div class="col-12 col-md-6 mb-4">
-                    <!-- img-fluid class makes the image responsive to its container -->
                     <img src="assets/images/helping-hand.avif" class="img-fluid" alt="Hands reaching out for help">
                 </div>
-                <!-- mb-4 used to add margin under text -->
                 <div class="col-12 col-md-6 mb-4 align-self-center">
                     <p>
                     Mental health affects every part of our lives, 
@@ -103,7 +98,7 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Services section -->
+        <!-- Common Conditions section -->
         <section id="conditions" class="container section">
             <div class="row">
                 <div class="col-12 text-center">
@@ -132,7 +127,6 @@
                         <img src="assets/images/anxiety.avif" class="card-img-top"
                             alt="Lady with mind all over the place" >
                         <div class="card-body">
-                            <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
                             <h3 class="card-title text-center">Anxiety</h3>
                             <p class="card-text">
                                 Anxiety is a mental health condition where your body and mind 
@@ -180,8 +174,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <section id="resources" class="container section">
             <div class="row">
@@ -242,6 +234,37 @@
             </div>
         </section>
 
+        <section id="contact" class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center my-4">
+                <h2 class="display-5">Contact Us</h2>
+                <p class="mt-4">Got any questions? We would love for you to reach out to us if you have anything to ask or need to speak to someone.</p>
+            </div>
+            <div class="col-12 col-md-10 col-lg-8 mb-4">
+                <form class="row g-3 sharp-corners">
+                    <div class="col-lg-4">
+                        <label for="full-name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="full-name">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="phonenumber" class="form-label">Phone number</label>
+                        <input type="number" class="form-control" id="phonenumber">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary custom-button">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </section>
 
     </main>
 
