@@ -6,11 +6,43 @@
     background-color: #C4A482;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+}
+
 
 div p {
     text-align: center;
 }
 
 header {
-    margin-top: 50px;
+    margin-top: 57px;
+    width: 100%;
+}
+
+#social-networks {
+    justify-content: space-evenly;
+}
+
+#social-networks i {
+    font-size: 200%;
+    color: black;
+
+}
+
+footer {
+    background-color: #C4A482;
+}
+
+
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #333333;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #conditions .card-text {
+        min-height: auto;
+    }
 }
