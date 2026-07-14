@@ -18,6 +18,18 @@ div p {
 header {
     margin-top: 57px;
     width: 100%;
+    background-color: #F0EAD6;
+}
+
+main {
+    background-color: #F0EAD6;
+}
+
+#about,
+#resources,
+#conditions,
+#contact {
+    scroll-margin-top: 50px;
 }
 
 #social-networks {
