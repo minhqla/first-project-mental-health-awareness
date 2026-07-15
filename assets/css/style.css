@@ -10,10 +10,6 @@
     color: white;
 }
 
-.navbar-nav .nav-lunk:hover {
-    color: white;
-}
-
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -53,7 +49,7 @@ main {
     justify-content: space-evenly;
 }
 
-#social-networks i {
+#social-networks a {
     font-size: 200%;
     color: black;
 }
