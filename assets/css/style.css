@@ -26,7 +26,11 @@ main {
 }
 
 #conditions {
-    padding-top: 1%;
+    padding-top: 1rem;
+}
+
+#resources {
+    padding-top: 1rem;
 }
 
 #home,
@@ -72,9 +76,9 @@ img {
     height: auto;
 }
 
-
-
-
+#success {
+    width: 100%;
+}
 
 @media screen and (min-width: 992px) {
     #menu a:hover {

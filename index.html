@@ -54,7 +54,7 @@
             <div class="p-3 rounded-3"> 
                 <div class="container p-3 text-center"> 
                     <h1 class="display-3 fw-bold">Mind Cove</h1> 
-                    <p class="lead">A sactuary for peace of mind.</p>
+                    <p class="lead">A sanctuary for peace of mind.</p>
                     <hr>
                     <p>Healing doesn't happen in a single day, it starts with one brave step in the right direction.</p>              
                     <a class="btn btn-outline-secondary" href="#contact">Contact Us</a> 
@@ -106,7 +106,7 @@
                     <h2 class="display-6">Common Conditions</h2>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/images/depression.avif" class="card-img-top"
                             alt="Lady covering her face with her hand">
                         <div class="card-body">
@@ -124,7 +124,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/images/anxiety.avif" class="card-img-top"
                             alt="Lady with mind all over the place" >
                         <div class="card-body">
@@ -135,13 +135,13 @@
                                 no immediate danger.
                             </p>
                             <p>
-                                A few Signs: Execessive worry, Restlessness, Trouble concentrating, Sleep problems, Avoiding situations.
+                                A few Signs: Excessive worry, Restlessness, Trouble concentrating, Sleep problems, Avoiding situations.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/images/trauma.avif" class="card-img-top" 
                             alt="Man with cuts and bruises and a bandage on his head">
                         <div class="card-body">
@@ -157,7 +157,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/images/eating-disorder.avif" class="card-img-top"
                             alt="Man with a plate of rubbish">
                         <div class="card-body">
@@ -187,7 +187,7 @@
                     <p>NHS Talking Therapies: <a class="link-opacity-75-hover" href="https://www.nhs.uk/nhs-services/mental-health-services/" target="_blank">NHS Mental Health Services</a></p>
                     <p>Your GP: Contact your local doctor</p>
                     <p><strong>Non-Profit Charities and Communities:</strong></p>
-                    <p>Mind: <a class="link-opacity-75-hover" href="https://www.mind.org.uk/" targe="_blank">Website</a></p>
+                    <p>Mind: <a class="link-opacity-75-hover" href="https://www.mind.org.uk/" target="_blank">Website</a></p>
                     <p>Rethink Mental Illness: <a class="link-opacity-75-hover" href="https://www.rethink.org/" target="_blank">Website</a></p>
                     <p>Togetherall:  Provides a safe, anonymous 24/7 online community moderated by professionals. You can often access this for free via your university, employer, or local NHS.</p>
                 </div>
@@ -218,6 +218,11 @@
                                 <td>24 hours</td>
                             </tr>
                             <tr>
+                                <th scope="row">NHS</th>
+                                <td>111 press 2</td>
+                                <td>24 hours</td>
+                            </tr>
+                                <tr>
                                 <th scope="row">EMEREGENCY</th>
                                 <td>999</td>
                                 <td>24 hours</td>
@@ -242,25 +247,28 @@
                 <p class="mt-4">Got any questions? We would love for you to reach out to us if you have anything to ask or need to speak to someone.</p>
             </div>
             <div class="col-12 col-md-10 col-lg-8 mb-4">
-                <form class="row g-3 sharp-corners">
+                <form class="row g-3">
                     <div class="col-lg-4">
                         <label for="full-name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="full-name">
+                        <input type="text" class="form-control" id="full-name" required="true">
                     </div>
                     <div class="col-lg-4">
                         <label for="phonenumber" class="form-label">Phone number</label>
-                        <input type="number" class="form-control" id="phonenumber">
+                        <input type="number" class="form-control" id="phonenumber" required="true">
                     </div>
                     <div class="col-lg-4">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email" required="true">
                     </div>
                     <div class="col-12">
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" rows="3"></textarea>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary custom-button">Send</button>
+                    <button type="reset" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Submit
+                    </button>
                     </div>
                 </form>
             </div>
@@ -308,6 +316,25 @@
     <!-- Bootstrap JS script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Submission Successful!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Thank you for your message, we will get back to you soon!
+                </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+    </div>
 
 
 
