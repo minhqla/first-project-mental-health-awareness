@@ -76,9 +76,29 @@ img {
     height: auto;
 }
 
-#success {
-    width: 100%;
+
+a.btn.custom-button-filled {
+    background-color: #C4A482;
+    color: black;
 }
+
+a.btn.custom-button-filled:hover {
+    background-color: #FFFDD0;
+    color: black;;
+    color: black;
+}
+
+button.custom-button-filled {
+    background-color: #C4A482;
+    color: black;
+}
+
+button.custom-button-filled:hover {
+    background-color: #FFFDD0;
+    color: black;
+}
+
+
 
 @media screen and (min-width: 992px) {
     #menu a:hover {
