@@ -178,8 +178,8 @@
                     <p>NHS Talking Therapies: <a class="link-opacity-75-hover" href="https://www.nhs.uk/nhs-services/mental-health-services/" target="_blank">NHS Mental Health Services</a></p>
                     <p>Your GP: Contact your local doctor</p>
                     <p><strong>Non-Profit Charities and Communities:</strong></p>
-                    <p>Mind: <a class="link-opacity-75-hover" href="https://www.mind.org.uk/" target="_blank">Website</a></p>
-                    <p>Rethink Mental Illness: <a class="link-opacity-75-hover" href="https://www.rethink.org/" target="_blank">Website</a></p>
+                    <p>Mind: <a class="link-opacity-75-hover" href="https://www.mind.org.uk/" target="_blank" rel="noopener noreferer">Website</a></p>
+                    <p>Rethink Mental Illness: <a class="link-opacity-75-hover" href="https://www.rethink.org/" target="_blank" rel="noopener noreferer">Website</a></p>
                     <p>Togetherall:  Provides a safe, anonymous 24/7 online community moderated by professionals. You can often access this for free via your university, employer, or local NHS.</p>
                 </div>
                 <div class="col-12 col-xl-6">
@@ -239,7 +239,7 @@
                     <p class="mt-4">Got any questions? We would love for you to reach out to us if you have anything to ask or need to speak to someone.</p>
                 </div>
             <div class="col-12 col-md-10 col-lg-8 mb-4">
-                <form class="row g-3">
+                <form class="row g-3" action="#">
                     <div class="col-lg-4">
                         <label for="full-name" class="form-label">Full Name</label>
                         <input type="text" class="form-control" id="full-name" required>
@@ -256,10 +256,9 @@
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" rows="3"></textarea>
                     </div>
-                    <!-- Button trigger modal -->
                     <div class="col-12">
-                    <button type="reset" class="btn custom-button-filled" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Submit
+                    <button type="submit" class="btn custom-button-filled">
+                        Submit
                     </button>
                     </div>
                 </form>
@@ -278,9 +277,9 @@
             <div class="col-12 text-center">
                 <p id="follow" class=""><strong>Follow us on our social media.</strong></p>
                 <div id="social-networks">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener norefferer" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank" rel="noopener norefferer" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener norefferer" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferer" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferer" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferer" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
                 </div>
 
                 <div class="col-12 text-center">
@@ -299,23 +298,6 @@
     <!-- Bootstrap JS script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Submission Successful.</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                Thank you for your message, we will get back to you soon.
-                </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-    </div>
 
 </body>
 </html>
