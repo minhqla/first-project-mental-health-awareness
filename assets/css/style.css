@@ -102,6 +102,9 @@ button.custom-button-filled:hover {
     color: black;
 }
 
+.custom-link-color {
+    color: #5C1A2E;
+}
 
 
 @media screen and (min-width: 992px) {
